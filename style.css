@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --ff-title: "Montserrat", sans-serif;
+  --ff-body: "DM Sans", sans-serif;
+
+  --color-main: #64748b;
+}
+
+body {
+  background: linear-gradient(107.56deg, #0f172a 0%, #475569 100%);
+  
+  font-size: 1.6rem;
+  font-family: var(--ff-body);
+
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+body, button, input {
+  font-family: var(--ff-body);
+}
+
+button {
+  background-color: #64748b;
+  font-weight: bold;
+  color: #f1f5f9;
+
+  border-radius: 0 .4rem .4rem 0;
+
+  cursor: pointer;
+
+  transition: background .3s;
+}
+
+button:hover {
+  background-color: #475569;
+}
+
+
+.wrongGuess {
+  color: #f43f5e;
+  opacity: 1;
+  transition: ease-in-out .25s;
+}
+
+.horizontalShake {
+  animation: horizontal-shaking .5s;
+}
+
+.fade {
+  opacity: 0;
+}
+
+.hide {
+  display: none;
+}
+
+main { 
+  background: #f1f5f9;
+  box-shadow: 0px .2rem .4rem rgba(0, 0, 0, 0.1);
+  border-radius: .6rem;
+  padding: 4.8rem 6.4rem 6.4rem;
+
+  width: min(42.8rem, 90%);
+
+  margin-top: -10rem;
+
+  text-align: center;
+}
+
+
+/* Screen 1 */
+h1 {
+  font-family: var(--ff-title);
+  font-size: 2.4rem;
+  margin-bottom: 1.6rem;
+}
+
+h1, p {
+  color: #0f172a;
+}
+
+p {
+  opacity: .8;
+}
+
+
+form {
+  margin-top: 4.8rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+  appearance: number;
+}
+
+input, button {
+  border: none;
+  padding: 1.6rem;
+}
+
+input {
+  background-color: #e2e8f0;
+  width: 5rem;
+  border-radius: .4rem 0 0 .4rem;
+}
+
+
+/* Screen 2 */
+h2{
+  font-size: 2.4rem;
+  font-weight: normal;
+  margin-bottom: 3.3rem;
+}
+
+.screen2 button {
+  border-radius: .4rem;
+}
+
+
+@keyframes horizontal-shaking {
+  0% { transform: translateX(0) }
+  25% { transform: translateX(5px) }
+  50% { transform: translateX(-5px) }
+  75% { transform: translateX(5px) }
+  100% { transform: translateX(0) }
+ }

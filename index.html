@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guessing Game</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <div class="screen1">
+
+      <h1>Guessing Game</h1>
+      
+      <p>Guess the number from 1 to 10</p>
+      
+      <p class="wrongGuess fade">Wrong... Try again.</p>
+      <form>
+        <input id="inputNumber" type="number">
+        <button id="submitButton">Try</button>
+      </form>
+    </div>
+
+    <div class="screen2 hide">
+      <h2>You got it in 3 attempts!</h2>
+      <button id="restartButton">Play again?</button>
+    </div>
+  </main>
+  <script src="./main.js"></script>
+</body>
+</html>
