@@ -90,11 +90,11 @@ h1, p {
 
 p {
   opacity: .8;
+  margin-bottom: 1rem;
 }
 
 
 form {
-  margin-top: 4.8rem;
   display: flex;
   justify-content: center;
 }
